@@ -7,12 +7,16 @@
     "dev": "webpack-dev-server --progress --open --config webpack.dev.conf.js",
     "build": "webpack --progress --config webpack.build.conf.js"
   },
-  "keywords": [],
+  "keywords": [
+    "bundle",
+    "webpack"
+  ],
+  "homepage": "https://github.com/F-l-e-m/FlemBundle",
   "browserslist": [
     "> 1%",
     "last 3 version"
   ],
-  "author": "",
+  "author": "Artyom Doronin",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",

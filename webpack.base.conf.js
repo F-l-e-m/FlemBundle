@@ -45,11 +45,11 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{
-				from: `${PATHS.assets}/img`,
+				from: `${PATHS.src}/${PATHS.assets}/img`,
 				to: `${PATHS.assets}/img`
 			},
 			{
-				from: `${PATHS.assets}/fonts`,
+				from: `${PATHS.src}/${PATHS.assets}/fonts`,
 				to: `${PATHS.assets}/fonts`
 			},
 			{
@@ -121,7 +121,8 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			'~': 'src'
+			'~': 'src',
+			'@': 'src'
 		}
 	}
 };
