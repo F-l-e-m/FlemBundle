@@ -8,3 +8,23 @@
     }
     @return $pixels / $context * 1rem;
 }
+
+@mixin respond-to($media) {
+  @if $media == tablet-min {
+      @media only screen and (max-width: $small) {
+          @content;
+      }
+  } @else if $media == tablet {
+      @media only screen and (max-width: $large) {
+          @content;
+      }
+  } @else if $media == notebook {
+      @media only screen and (max-width: $wide) {
+          @content;
+      }
+  } @else if $media == phone {
+      @media only screen and (max-width: $phone) {
+          @content;
+      }
+  }
+}
