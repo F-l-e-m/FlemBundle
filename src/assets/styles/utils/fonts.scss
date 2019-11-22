@@ -1,0 +1,13 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url, $f-ext) {
+	@font-face {
+		font-family: $f-name;
+		font-style: $f-style;
+		font-weight: $f-weight;
+        src: url($f-url) format($f-ext);
+    }
+}
+
+@include font('OpenSans', normal, 400, '../fonts/opensans-webfont.woff2', 'woff2');
+@include font('OpenSans', normal, 700, '../fonts/opensans-webfont.woff2', 'woff2');
+@include font('OpenSans', normal, 400, '../fonts/opensans-webfont.woff', 'woff');
+@include font('OpenSans', normal, 700, '../fonts/opensans-webfont.woff', 'woff');

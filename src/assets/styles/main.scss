@@ -1,11 +1,7 @@
 @import 'utils/fonts.scss';
+@import 'utils/reset.scss';
 @import 'utils/variables.scss';
 @import 'utils/mixins.scss';
 @import 'utils/libs.scss';
 @import 'utils/global.scss';
 @import '../../components/components.scss';
-
-body {
-    background-color: black;
-    display: flex;
-}
